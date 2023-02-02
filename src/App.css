@@ -4,6 +4,7 @@ nav {
   align-items: center;
   justify-content: center;
   min-height: 90%;
+  margin-bottom: 50px;
 }
 
 nav h1 {
@@ -14,7 +15,7 @@ nav h1 img {
   width: 40px;
 }
 
-nav ul {
+ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -40,4 +41,15 @@ nav ul li a {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+#highlights {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+#highlights li {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
