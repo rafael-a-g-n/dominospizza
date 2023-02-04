@@ -14,7 +14,7 @@ export default function Highlights() {
       <ul>
         {highlights.map((highlight, index) => (
           <li key={index}>
-            <a href={highlight.description.url}>
+            <a href={highlight.description}>
               <img src={highlight.image} alt={highlight.description} />
             </a>
           </li>
