@@ -1,6 +1,8 @@
 import React from "react";
 
 const Navbar = (props) => {
+  const { toggleProducts, cart } = props;
+
   return (
     <nav>
       <h1>
@@ -8,7 +10,7 @@ const Navbar = (props) => {
           href="/"
           onClick={(event) => {
             event.preventDefault();
-            props.toggleProducts(false);
+            toggleProducts(false);
           }}
         >
           <img
@@ -27,7 +29,7 @@ const Navbar = (props) => {
             href="/"
             onClick={(event) => {
               event.preventDefault();
-              props.toggleProducts(true);
+              toggleProducts(true);
             }}
           >
             Menu
@@ -52,7 +54,7 @@ const Navbar = (props) => {
         </li>
         <li>
           <a className="cart" href="/">
-            Carrinho
+            Carrinho ({cart.length})
           </a>
         </li>
       </ul>
